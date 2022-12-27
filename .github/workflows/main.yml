@@ -26,7 +26,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }} 
-      - name: 'Resolve Project Dependencies Using Npm'
       - run: npm install && npm run build && npm run clean
       - name: Build And Deploy
         id: builddeploy
