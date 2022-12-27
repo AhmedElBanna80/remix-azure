@@ -7,7 +7,8 @@
     "dev:node": "cross-env NODE_ENV=development nodemon --require dotenv/config ./server.js --watch ./server.js",
     "dev:remix": "remix watch",
     "start": "cross-env NODE_ENV=production node ./server.js",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "clean": "rm -rf .cache/ node_modules"
   },
   "dependencies": {
     "@azure/functions": "^3.5.0",
