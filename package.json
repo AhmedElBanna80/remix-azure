@@ -1,6 +1,7 @@
 {
   "private": true,
   "sideEffects": false,
+  "main": "server",
   "scripts": {
     "build": "remix build",
     "dev": "remix build && run-p \"dev:*\"",
